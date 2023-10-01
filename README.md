@@ -21,7 +21,7 @@ This project contains a Python script that trains a neural network model using t
 ### Running the Script
 To run the script, use the following command:
 ```bash
-python test.py --epochs <number_of_epochs> --batch-size <batch_size> --save-model
+python poc.py --epochs <number_of_epochs> --batch-size <batch_size> --save-model
 ```
 
 ### Command-line Arguments
