@@ -5,7 +5,7 @@ This is a Proof of Concept (PoC) project demonstrating a basic implementation of
 
 ## Setup Instructions
 1. Install the required packages: `pip install tensorflow matplotlib numpy`.
-2. Run the script: `python test.py --epochs 10`.
+2. Run the script: `python poc.py --epochs 10`.
 
 ## Usage
 - `--epochs`: Number of epochs for training the model (default is 10).
@@ -26,4 +26,4 @@ After running, the program will display plots showing the model's performance an
 - Enhancements in logging and result representation for more in-depth analysis.
 
 ## Contact
-For any queries or suggestions, please contact [Your Contact Information].
+For any queries or suggestions, just send a PR.
