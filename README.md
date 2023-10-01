@@ -2,6 +2,10 @@
 
 This project contains a Python script that trains a neural network model using the MNIST dataset. The trained model is then used to make predictions, and its performance is evaluated and plotted.
 
+The [MNIST dataset](http://yann.lecun.com/exdb/mnist/) is a large database of handwritten digits that is commonly used for training and testing in the field of machine learning. The MNIST dataset is significant as it serves as a basic dataset to implement and test new machine learning techniques.
+
+TensorFlow, an open-source machine learning framework, is utilized in this project due to its flexibility and extensive functionality in training neural networks.
+
 ## Features
 - Load and preprocess the MNIST dataset
 - Build and train a Sequential model using TensorFlow and Keras
