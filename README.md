@@ -22,7 +22,17 @@ TensorFlow, an open-source machine learning framework, is utilized in this proje
 - NumPy
 
 ## Usage
+
+### Installation
+
+1. Clone the repository.
+2. Before running the script, ensure that the required libraries are installed by running:
+```bash
+pip install -r requirements.txt
+```
+
 ### Running the Script
+
 To run the script, use the following command:
 ```bash
 python poc.py --epochs <number_of_epochs> --batch-size <batch_size> --save-model
