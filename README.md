@@ -1,29 +1,43 @@
-# MNIST TensorFlow PoC
+# MNIST PoC using TensorFlow
 
-## Introduction
-This is a Proof of Concept (PoC) project demonstrating a basic implementation of a neural network model using TensorFlow to classify handwritten digits from the MNIST dataset.
+This project contains a Python script that trains a neural network model using the MNIST dataset. The trained model is then used to make predictions, and its performance is evaluated and plotted.
 
-## Setup Instructions
-1. Install the required packages: `pip install tensorflow matplotlib numpy`.
-2. Run the script: `python poc.py --epochs 10`.
+## Features
+- Load and preprocess the MNIST dataset
+- Build and train a Sequential model using TensorFlow and Keras
+- Evaluate the model's accuracy and plot training history
+- Make predictions using the trained model
+- Enhanced logging for tracking the training process and debugging
+- Command-line arguments for customization of epochs, batch size, and saving the model
+- Option to save the trained model
+
+## Requirements
+- Python
+- TensorFlow
+- Matplotlib
+- NumPy
 
 ## Usage
-- `--epochs`: Number of epochs for training the model (default is 10).
+### Running the Script
+To run the script, use the following command:
+```bash
+python test.py --epochs <number_of_epochs> --batch-size <batch_size> --save-model
+```
 
-## Purpose
-This PoC aims to provide a clear understanding and a basic implementation of a neural network model using TensorFlow.
+### Command-line Arguments
+- `--epochs` (optional): Specify the number of epochs for training the model (default is 10).
+- `--batch-size` (optional): Specify the batch size for training (default is 32).
+- `--save-model` (optional): Include this flag to save the trained model.
 
-## Results Explanation
-After running, the program will display plots showing the model's performance and accuracy and logs will be written to `mnist_poc.log`.
+## Log Files
+The script logs events and errors into a log file named `mnist_poc_<timestamp>.log`, located in the same directory as the script.
 
-## Known Limitations
-- This is a basic implementation and does not include advanced optimizations or tuning.
-- The model architecture is simple and can be expanded for more complex tasks.
+## Example
+```bash
+python test.py --epochs 20 --batch-size 64 --save-model
+```
 
-## Future Improvements
-- Implementation of advanced optimization techniques.
-- Addition of more layers and neurons to increase model complexity.
-- Enhancements in logging and result representation for more in-depth analysis.
+This command will run the script for 20 epochs, with a batch size of 64, and will save the trained model after completion.
 
-## Contact
-For any queries or suggestions, just send a PR.
+## Output
+The script will output the model training and evaluation process, including the accuracy and loss plots. If any errors occur during the execution, they will be printed to the console and logged to the log file.
